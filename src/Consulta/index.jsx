@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import './styles.css';
 
-import api from './services/api';
+import api from '../services/api';
 
-function App() {
+function Consulta() {
   const [input, setInput] = useState('');
   const [cep, setCep] = useState({});
 
@@ -23,7 +23,6 @@ function App() {
       setInput('');
     }
   }
-
   return (
     <div className='container'>
       <h1 className='title'>Buscador CEP</h1>
@@ -43,7 +42,10 @@ function App() {
         <div className='main'>
           <h2>CEP: {cep.cep}</h2>
           <span>{cep.logradouro}</span>
-          <span>Complemento: {cep.complemento}</span>
+          <span>
+            Complemento:{' '}
+            {cep.complemento ? `${cep.complemento}` : 'Sem complemento'}
+          </span>
           <span>{cep.bairro}</span>
           <span>
             {cep.localidade} - {cep.uf}
@@ -54,4 +56,4 @@ function App() {
   );
 }
 
-export default App;
+export default Consulta;
