@@ -25,7 +25,7 @@ function Consulta() {
   }
   return (
     <div className='container'>
-      <h1 className='title'>Buscador CEP</h1>
+      <h1 className='title'>Consulta de CEP</h1>
       <div className='containerInput'>
         <input
           type='text'
