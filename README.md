@@ -30,4 +30,4 @@ yarn start
 
 Aplicativo de consultar CEP.
 
-Link: https://buscador-cep-woad.vercel.app/
+Link do deploy: https://buscador-cep-woad.vercel.app/
