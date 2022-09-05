@@ -9,7 +9,7 @@ Criar uma pasta para este projeto e clonar o repositório
 ```
 mkdir projeto
 cd projeto
-git clone  .
+git clone https://github.com/Guilhermennf/buscador-cep.git .
 ```
 
 ### Segundo passo
